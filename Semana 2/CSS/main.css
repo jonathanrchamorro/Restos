@@ -101,7 +101,7 @@ display: flex;
 }
 .branch-left {
     position: absolute;
-    height: 150px;
+    height: 200px;
     top: 80%;
     left: -60px;
 }
@@ -257,8 +257,8 @@ height: 70px;
     height: 39px;
     outline: none;
     position: absolute;
-    top: 2077px;
-    right: 220px;
+    top: 2120px;
+    right: 300px;
 }
 .offer-container button img{
    width: 40px; 
