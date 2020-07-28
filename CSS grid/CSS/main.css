@@ -1,0 +1,309 @@
+
+body html {
+    margin:0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Nav */
+} 
+.nav-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    align-items: center;
+    background-color: #ffff;
+    height: 15vh;
+    justify-content: center;
+    
+}
+.link-container{
+align-items: center;
+text-align: center;
+}
+
+.link-container ul{
+    padding: 0;
+    margin-left: 50%;
+}
+
+.link-container ul li{
+    display: inline;
+    padding: 0 10px;
+    
+}
+.link-container ul li a{
+    text-decoration: none;
+    color: #699792;
+}
+.icon-container {
+height: 100%;
+align-items: center;
+text-align: center;
+width: 200px;
+justify-self: right;
+display: flex;
+}
+.icon-container a img {
+    width: 15px;
+    height: 15px;
+    
+}
+.icon-container a {
+    text-decoration: none;
+    margin: 0 10px;   
+    color: #699792; 
+}
+
+/* Hero */
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f6b2a0;
+    height: 85vh;
+    width: 100%;
+    border-bottom-right-radius: 100px;  
+}
+.hero-text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 80px;
+}
+/* top y left solitos solo aolican en posicion absoluta si no se usa padding */
+.hero-logo{
+    position: absolute; 
+    top: 65px; 
+    left: 80px;
+}
+
+.hero-container h1 {
+    color: #699792;
+}
+.hero-container p {
+    color: #699792;
+}
+.hero-container button {
+    color:white;
+    background-color: #e3462b;
+    width: 80px;
+    border:none ;
+    height: 40px;
+    outline: none;
+}
+.hero-image-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image {
+    height: 300px;
+    width: auto;
+}
+.branch-left {
+    position: absolute;
+    height: 150px;
+    top: 80%;
+    left: -60px;
+}
+/* Benefits */
+.tittle-container-text {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    margin-top: 50px;
+}
+.tittle-container-text  h3{
+    color: #e3462b;
+    font-size: 8px;
+}
+.tittle-container-text  h1{
+    color: #699792;
+    margin-top: 0;
+}
+.benefits-container-info {
+    display: flex;
+    padding-left: 80px;
+    justify-content: space-between;
+    padding-right: 80px;
+    margin-top: 80px;
+}
+.benefits-container-info img {
+height: 70px;
+}
+
+.benefits-container-info div {
+    display: flex;
+    align-items: center;
+}
+.benefits-container-info p {
+    padding-left: 10px;
+    font-size: 10px;
+    color: #699792;
+}
+
+/* Prodcuts */
+.products-container {
+   display: flex;
+   padding: 0 80px; 
+   justify-content: space-between;
+   margin-top: 10px;
+}
+.product-card {
+    
+}
+.product-box {
+    height: 150px;
+    width: 130px ;
+    border: 1px solid lightgrey;
+}
+.product-card h3 {
+    color: #699792;
+    font-size: 8px;
+}
+.product-card p {
+    color: #e3462b;
+    margin-top: 0px;
+}
+.product-box img {
+    height: 100px;
+    width: 80px;
+    padding: 25px;
+}
+.all-products-btn {
+    margin-left: 80px;
+    border: 1px solid #699792;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #699792;
+    margin-top: 20px;
+    outline: none;
+}
+.branch-right {
+    position: absolute;
+    height: 300px;
+    top: 200%;
+    right: -90px;
+    transform: rotate(180deg);
+}
+/* USERS */
+.tittle-container-users {
+    color: #699792;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.container-users {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container-users div {
+    height: 200px;
+    width: 300px ;
+    border: 1px solid lightgrey;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #a5adba
+}
+.container-users img{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+.container-users h3{
+    color: #699792;
+    align-items: flex-start;    
+}
+/* OFFER */
+.offer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f6b2a0;
+    border-bottom-right-radius: 100px;  
+    margin-top: 70px;
+    height: 500px;
+}
+.offer-text-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 80px;
+}
+.offer-text-right h1 {
+    color: #699792;
+    margin-top: 100;
+}
+.offer-text-right p {
+    color: #699792;
+    margin: 0;
+}
+.offer-container input {
+    color:white;
+    background-color: #fff;
+    width: 180px;
+    border:none ;
+    height: 40px;
+    outline: none;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.offer-container button {
+    color:white;
+    background-color: #e3462b;
+    width: 50px;
+    border:none ;
+    height: 39px;
+    outline: none;
+    position: absolute;
+    top: 2077px;
+    right: 220px;
+}
+.offer-container button img{
+   width: 40px; 
+   height: 40px;
+
+}
+.offer-image-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-image {
+    height: 300px;
+    width: auto;
+}
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 15px;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left li {
+    justify-self: right;
+    color: #699792;
+    margin: 20px;
+}
+footer .footer-right {
+    justify-self:center;  
+}
+footer .footer-right img {
+    width: 30px;  
+    height: 30px;
+    margin: 10px;
+    
+}
+
+ 
