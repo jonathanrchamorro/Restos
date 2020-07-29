@@ -1,12 +1,16 @@
 
-body html {
+body, html {
     margin:0;
     padding: 0;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+ }
 
     /* Nav */
-} 
+
 .nav-container {
     display: grid;
     grid-template-columns: 2fr 1fr ;
@@ -61,18 +65,21 @@ display: flex;
     background-color: #f6b2a0;
     height: 85vh;
     width: 100%;
-    border-bottom-right-radius: 100px;  
+    border-bottom-right-radius: 100px; 
+    
 }
 .hero-text-left {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 80px;
+    position: relative;
+    font-size: larger;
 }
 /* top y left solitos solo aolican en posicion absoluta si no se usa padding */
 .hero-logo{
     position: absolute; 
-    top: 65px; 
+    top: -30px; 
     left: 80px;
 }
 
@@ -96,14 +103,18 @@ display: flex;
     align-items: center;
 }
 .hero-image {
-    height: 300px;
+    height: 400px;
     width: auto;
+    border-radius: 50px;
+}
+.branch-container-left{
+    position: relative;
 }
 .branch-left {
     position: absolute;
-    height: 200px;
-    top: 80%;
-    left: -60px;
+    height: 250px;
+    top: -70px;
+    left: -100px;
 }
 /* Benefits */
 .tittle-container-text {
@@ -179,12 +190,16 @@ height: 70px;
     margin-top: 20px;
     outline: none;
 }
+.branch-container-right{
+    position: relative;
+}
 .branch-right {
     position: absolute;
     height: 300px;
     top: 200%;
     right: -90px;
     transform: rotate(180deg);
+    position: absolute;
 }
 /* USERS */
 .tittle-container-users {
@@ -230,6 +245,7 @@ height: 70px;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 80px;
+    position: relative;
 }
 .offer-text-right h1 {
     color: #699792;
@@ -257,7 +273,7 @@ height: 70px;
     height: 39px;
     outline: none;
     position: absolute;
-    top: 2120px;
+    top: 316px;
     right: 300px;
 }
 .offer-container button img{
@@ -271,8 +287,9 @@ height: 70px;
     align-items: center;
 }
 .offer-image {
-    height: 300px;
+    height: 400px;
     width: auto;
+    border-radius: 50px;
 }
 /* FOOTER */
 
