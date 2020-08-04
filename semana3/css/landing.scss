@@ -1,0 +1,288 @@
+// Propiedaddes del globales
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+h1 h2 h3 {
+    font-family: Arial, Helvetica, sans-serif;   
+}
+ // PROPIEDADES DEL NAV CONTENEDOR PRINCIPAL
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #c0dfed;
+    border-radius: 80px 80px 0 0px;
+    margin: 60px;
+    height: 20%;
+}
+    // Propiedades datos de contacto del nav
+.navleft__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: 15px;
+        width: auto;
+        margin-right: 5px;
+    }
+    h1 {
+        color: #013a4f;
+        margin-right: 20px; 
+        font-size: 15px;
+    }
+    img {
+        margin-right: 15px;
+        height: 15px;
+        width: auto;
+        margin-right: 5px;
+    }
+    span {
+        color: #013a4f;
+        font-size: 10px;
+    }
+    
+}
+    //Pripedades delnav central (servicio)
+.nav__center {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    li {
+        display: inline;
+        margin: 5px;
+        color: #6f8089;
+        
+    }
+
+}
+    //Propiedades del nad derecho boton suscribirse
+.nav__right {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 10px;
+        color:#013a4f;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    button {
+        border-radius: 50px;
+        border: 1px solid #11abed;
+        background-color: transparent;
+        padding: 5px 10px;
+        color: #11abed;
+        font-size: 10px;
+    }
+    img{
+        position: absolute;
+        top: -60px; left: 10px;
+        z-index: -1;
+        height: 150px;
+        width: 150px;
+        transform: rotate(-20deg);
+    }  
+
+}
+
+// PROPIEDADES DEL HERO CONTENEDOR PRINCIPAL
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #c0dfed;
+    margin: 60px;
+    margin-top: -60px;   
+    height: 70.3vh;
+    margin-bottom: 0;
+}
+    //Propiedades del hero izquierdo boton y vous
+.hero__left {
+    margin-left: 50px;
+    position: relative;
+    width: auto;
+    h6 {
+        color: #11abed;
+    }
+    h1 {
+        color: #013a4f;
+        font-size: 25px;
+    }
+    p{
+        color: #6f8089;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    button {
+        border-radius: 50px;
+        border: 1px solid #11abed;
+        background-color: #11abed;
+        padding: 10px 15px;
+        color: #ffff;
+        font-size: 10px;
+    }
+    span {
+        color: #013a4f;
+        position: absolute;
+        top: 225px; left: 120px;
+        font-size: 15px;
+    }
+    img {
+        position: absolute;
+        top: 80px; left: -110px;
+        z-index: -1;
+        height: 200px;
+        width: 200px;
+
+    }  
+}
+    //Propiedades del hero derecho imagenen judith
+.hero__right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    img {
+        height: 250px;
+        width: 200px;
+        
+    }
+    p {
+        color: #013a4f;
+        font-size: 10px;
+        margin-left: 50px;
+        position: absolute;
+        top: 170px; left: 180px;
+        
+    }
+
+}
+// PROPIEDADES DEL FOOTER
+.footer__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    position: relative;
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0;
+}
+ //
+.footer__text--left {
+    margin-left: 50px;
+
+    h6 {
+        color: #11abed;
+        margin-bottom: 0;
+    }
+    h4 {
+        color: #013a4f;
+        margin-top: 0;
+    }   
+}
+.footer__text--textright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h5 {
+        color: #6f8089;
+        font-weight: lighter;
+        font-size: 10px;  
+    }    
+}
+
+    //Contenedor de iconos y textos del footer
+.footer__icontext{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    position: relative;
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+    margin-top: 0;
+    margin-bottom: 60px;
+    border-radius: 0 0 60px 60px;   
+}
+    //contenedor izquierdo
+.footer__icontext--left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: -0px;
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        
+    }
+    p {
+        font-size: 8px;    
+    }
+}
+.footer__icontext--leftcentro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: -0px;
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        
+    }
+    p {
+        font-size: 8px;  
+    }
+}
+.footer__icontext--rightcentro{
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        
+    }
+    p {
+        font-size: 8px;    
+    }
+
+}
+.footer__icontext--right {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -0px;
+    
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+        
+    }
+    p {
+        font-size: 8px;  
+        margin-right: 10px;
+    }
+
+}
